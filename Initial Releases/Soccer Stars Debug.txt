@@ -1,0 +1,44 @@
+More about frictionless:-
+
+**Download the "Soccer_Stars_start.jpg" file before running the game.**
+
+Qn) Why check_collision() as integer format and not simply collision() detection in the way when the overlap?
+
+Ans:- Helps troubleshoot multiple collision occurrences at the same time.
+
+1) Provides an alternative way to get around tangential collisions, even though they are not perfect but at least doesn't allow the game to get stuck
+
+These data set is actually from a test case occured and not randomly generated
+2) Consider the case where ball is at (640,360) radius of ball is 20 and striker is 40.
+Right striker at (705,360).
+Left striker from (200,360) is imparted velocity in +x direction. At the position when x1=585 say collision occurs and let the velocity of striker1 just before collision be 10 and just after collision be 7. Let the ball have a velocity gain of 15.
+Then as per the collision() function the striker1 will move back to 575 just before collision occured. 
+NOW,
+   
+   S1  Ball   S2
+  -->5 -->15  -0-
+
+In the next iteration the objects will be at
+S1-->(582,360)
+B-->(655,360)
+S2-->(705,360)
+
+Now again since B entered S2 thus collision occured again.
+now let the new speeds be B -10 <-- (in reverse direction) S2 -->3
+Since collision occured B will be tracked back to (640,360) again.
+
+Now, here the problem is collision function is already called once. And it detected collision of S2 and B. But After tracking back to the same position of B
+Now, at the same position S1 is colliding with B in its new position of (582,360) and (655,360). When further move_all() is called. They further move into each other at S1 (589,360) and B (630,360). This situation will cause collision but wil be irreversible because this will be occuring foreveradn move more and more into each other once they have penetrated.
+
+Hence, the normal calling of collision() after they've taken place won't work.
+
+To resolve it, check_collilsion() function of integer type which determines if collision will be occuring is to be done.
+Now if a collision will occur in the next predicted location of their. Then without actually going into one another their velocities are reversed.
+Now, here move_all() is not called and that makes the difference. Here, once a collision has occured and their new velocoties are developed, check_collision() is called again the see if collision occur wiht thier new velocities. If, yes then this is repeated again, until finally a point is reached when there are no possible collisions in the next iteration. 
+This is the whole concept between check_collision integer type and collision void type.
+
+Now a problem her also is the tangential collision. Check_collision doesn't acutally resolve tangential collisons. Tangential collisions are a series of infinitely many collisions. This causes check_collision() function to be called over and over again with no other function being called thus being stuck in an infinite loop.
+
+For resolving this we take count of total number of collisions at each shot (by the mouse). At max they won't exceed the 30 collision (maybe) in one shot.
+So if 30 collisions or more have occured that means we have encountered tangential collisions. And hence we need to stop the objects causing it.
+Thus we forcefully set their velocities to 0. Hence, the process of collision stops and it is resolved.
