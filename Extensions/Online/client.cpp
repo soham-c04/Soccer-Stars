@@ -21,7 +21,7 @@ pair<vector<double>,vector<string>> receiveData(){  // vector<string> is when se
     if(recv(clientSocket, receive, MAX_LEN, 0) > 0){
 		string data;
 		int n = strlen(receive);
-		cout << "\nreceive: " << receive << endl;
+//		cout << "\nreceive: " << receive << endl;
 		int i=0;
 		while(i<n){
 			data.clear();
