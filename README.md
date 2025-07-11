@@ -19,13 +19,29 @@ See [this](https://github.com/soham-c04/SAHAS-Arcade/tree/main/How%20to%20Compil
 8) The pink arc around the strikers shows the time left for the player to shoot the ball. If it becomes 0 then the player runs out of time and the next player gets the turn to shoot.
 9) Goaling in the first shot will be considered a foul and kick-off switches to other player.
 
+**Note:-** Make sure to have the resources folder in the same directory as "Soccer Stars.exe".
 
-### Main Menu
+### Online:-
+1. Start server.exe and enter port_no for server.
+2. Set the Gamemode to **Online**.
+3. Enter ip of server in which server.exe was started, then enter the port no.
+4. Wait for another player to join and matchmaking.
+
+<img width="400" src="https://github.com/user-attachments/assets/f56afefd-c016-4dc2-ab55-3651a61643d1">
+<img width="400" src="https://github.com/user-attachments/assets/1d2286a7-ede0-4ed4-8e70-0c0e93c68c8e">
+
+
+### Main Menu:
 Choose gamemode - Online or Offline or Quit from game.
+
+<img src="https://github.com/user-attachments/assets/6e32394e-eb93-4cb0-a386-6a5e8fefd58f" width="400"> 
 
 
 ### Settings:
 Choose the colors of Strikers.
+
+<img width="400" src="https://github.com/user-attachments/assets/1a54da0d-5326-4224-9ff1-cde8c4f7e16c">
+<img width="400" src="https://github.com/user-attachments/assets/5ab98f7a-0391-4379-8814-35e9b273431e">
 
 
 ### Pause Screen (only for Offline mode):
@@ -36,8 +52,35 @@ Choose the colors of Strikers.
 - **Settings** - open the settings tab to change colors in between the game.
 - **Quit** - goes back to the Main Menu page.
 
+<img width="400" src="https://github.com/user-attachments/assets/70b662fc-ef7c-4b16-aaed-c5b165c23114">
+<img width="400" src="https://github.com/user-attachments/assets/43163145-773f-483b-b93a-fce92ec0ad14">
+<img width="400" src="https://github.com/user-attachments/assets/57b2958d-d773-4f16-9b15-d9a53fc8d87f">
+<img width="400" src="https://github.com/user-attachments/assets/f4305ab6-dac9-4287-a159-20924c014443"><br><br><br>
 
 ## Gameplay
+<img src="https://github.com/user-attachments/assets/e7c67b67-8da0-4171-8169-312b9df3bf80" width="500">
+<img src="https://github.com/user-attachments/assets/3f9cc602-6fe9-4166-9638-1659caa1a08c" width="500">
 
-<img src="https://github.com/user-attachments/assets/3f9cc602-6fe9-4166-9638-1659caa1a08c" width="400"> <img src="https://github.com/user-attachments/assets/ac6b3e98-9b27-43a2-911b-7707154f021c" width="400">
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a900f144-9574-49de-be0c-8d356090501d" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/79f08f30-1dc2-4c57-b882-52e0a333f5c5" width="300"></td>
+    <td rowspan="2" align="center" valign="middle">
+      <div align="center">
+        <strong>Offline</strong><br><br><br>
+        <img src="https://github.com/user-attachments/assets/b99b8f00-6fed-47ff-9088-d8015ab5007e" width="300"><br><br><br>
+        <strong>Online</strong>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/96a408be-c311-4c95-83f6-f6892f732ba1" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/e8c1bc6a-c1ae-45d2-b542-a92413cc6825" width="300"></td>
+  </tr>
+</table>
+
+
+
+
+
 
