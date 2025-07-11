@@ -1,30 +1,43 @@
 # Soccer-Stars
 
-[Soccer Stars by Miniclip](https://www.miniclip.com/games/soccer-stars)
+This game is inspired by - [Soccer Stars by Miniclip](https://www.miniclip.com/games/soccer-stars)
 
-### How to Play:-
-1) Both players have 5 strikers each. Players can shoot the strikers by left clicking on any of their strikers and then releasing from that position. 
+This is a multiplayer - online and offline game made using the library **graphics.h**.
+
+Check out [Air_Hockey from SAHAS-Arcade](https://github.com/soham-c04/SAHAS-Arcade) first.
+
+See [this](https://github.com/soham-c04/SAHAS-Arcade/tree/main/How%20to%20Compile) to compile to locally.
+
+## How to Play:-
+1) Both players have 5 strikers each. Players can shoot the strikers by holding left click on any of their strikers and then releasing it. 
 2) Initial turn to shoot the ball will be random.
-3) More the distance the mouse is pulled backwards, higher the force with which the striker is shot (Like a slingshot). But, the strikers have a maximum velocity and pulling the mouse further won't increase the speed any further.
-4) The yellow line with arrow head shows the direction in which the striker will be shot if released from the current position.
-5) Right-click to switch from current striker to choose another one.
-6) After a player shoots, the next player gets to shoot the ball after all the strikers and the ball on field have stopped moving.
-7) The pink arc around the strikers shows the time left for the player to shoot the ball. If it becomes 0 then the player runs out of time and the next player gets the turn to shoot.
-8) Goaling in the first shot will be considered a foul and kick-off switches to other player.
-9) There is no winning condition.
+3) There is a 90-sec timer before the game ends. The aim is to score more goals than your opponent.
+4) More the distance the mouse is pulled backwards, higher the force with which the striker is shot (Like a slingshot). But, the strikers have a maximum speed and pulling the mouse further won't increase the speed any further.
+5) The yellow line with arrow head shows the direction in which the striker will be shot if released from the current position.
+6) Right-click to switch from current striker to choose another one.
+7) After a player shoots, the next player gets to shoot the ball after all the strikers and the ball on field have stopped moving.
+8) The pink arc around the strikers shows the time left for the player to shoot the ball. If it becomes 0 then the player runs out of time and the next player gets the turn to shoot.
+9) Goaling in the first shot will be considered a foul and kick-off switches to other player.
 
 
-### Main Menu and Settings:-
-- Pressing Escape between the game will pause the game and a dialogue box with menu options will be shown
+### Main Menu
+Choose gamemode - Online or Offline or Quit from game.
+
+
+### Settings:
+Choose the colors of Strikers.
+
+
+### Pause Screen (only for Offline mode):
+- Pressing Escape between the game will pause the game and a dialogue box with menu options will be shown.
 - Pressing Escape again or pressing enter on resume option will resume the game again.
 - Options can be switched using arrow keys and to choose an option Enter Key is pressed.
-- Reset Game restarts the whole game including time goals initial position of strikers and ball.
-- Settings open the settings tab to change colors in between the game.
-- Quit Game Exits from the game.
+- **Reset** - restarts the whole game including goals, initial position of strikers, ball and Timer.
+- **Settings** - open the settings tab to change colors in between the game.
+- **Quit** - goes back to the Main Menu page.
 
-### Gameplay
+
+## Gameplay
 
 <img src="https://github.com/user-attachments/assets/3f9cc602-6fe9-4166-9638-1659caa1a08c" width="400"> <img src="https://github.com/user-attachments/assets/ac6b3e98-9b27-43a2-911b-7707154f021c" width="400">
 
-
-See [this](https://github.com/soham-c04/SAHAS-Arcade/tree/main/How%20to%20Compile) to compile to locally.
