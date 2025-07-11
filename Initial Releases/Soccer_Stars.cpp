@@ -120,7 +120,7 @@ class Striker{
 			y[3]=(Y2+Y1)/2-2*radius;
 			y[4]=(Y2+Y1)/2+2*radius;
 		}
-		
+
 		void print(int who,int n){
 			setlinestyle(0,0,1);
 			setcolor(15);
@@ -129,7 +129,7 @@ class Striker{
 				circle(x[i],y[i],radius);
 				floodfill(x[i],y[i],15);
 			}
-				
+
 			if(movement==0){ // Timer arc around the ball
 		    	// Depending on whose turn it is, an arc around all the strikers of the current shooter are drawn with pink
 				if(turn==who){
@@ -194,7 +194,7 @@ class Striker{
 				}
 			}
 		}
-		
+
 		void move(){ // Checks is goal has occured
 			for(int i=0;i<number;i++){ // same process is repeated for all strikers.
 				int incx=round(speed[i]*cos(rad(angle[i])));
@@ -205,11 +205,11 @@ class Striker{
 				speed[i]-=loss*DELAY/ms; // Frictional speed loss of striker per second
 				speed[i]=max(speed[i],0.0);
 				movement+=speed[i];
-					
+
 				boundary();
 			}
 		}
-		
+
 		bool Collision(){ // Collision of Striker with ball and Same side strikers
 			bool collide=false; // Checks if at least one collision has happened
 
@@ -318,7 +318,7 @@ class Striker{
 			}
 			return collide;
 		}
-		
+
 		void control(){
 			arc_angle=360.0; // this is the time left for a player to move teh striker which is refilled each time new turn comes
 			int n=-1; 		 // n represents which striker was chosen while inside the VK_LBUTTON was pressed
@@ -431,7 +431,7 @@ class Goal{
 					delay(DELAY);
 				}
 			}
-			
+
 			setvisualpage(1-page); // since in the above while loop in double buffering the visual and active pages were being constantly
 			// swapped. To set visual page back to the newly printed one this is done.
 			// GOAL !! is printed for 2 seconds in the middle of the ground for 2 seconds after all process of ball movement inside goal has
@@ -444,9 +444,9 @@ class Goal{
 				outtextxy((X1+X2)/2-120*Xratio,(Y1+Y2)/2-50*Yratio,c);
 				settextstyle(4,HORIZ_DIR,3*Xratio);
 			}
-			
+
 			reset();
-			
+
 			sleep(2); // play goal/foul text for 2 seconds
 		}
 }goal;
@@ -732,7 +732,7 @@ bool pause(){
 	}
 }
 
-void start(){
+void start_offline(){
 	srand(time(0)); // generates a random number to determine who will start the game
 	turn=1+rand()%2;
 	time(&ti);
@@ -773,17 +773,17 @@ int main(){
 	X1=X+goal.width; 	 Y1=Y;
 	X2=width-goal.width; Y2=height;
 	Full_Reset();
-	
+
 	initwindow(X_full,Y_full,"",-3,-3);
 	cleardevice();
 	readimagefile("resources/Soccer_stars_start.jpg",0,0,X_full,Y_full);
 	while(!GetAsyncKeyState(VK_RETURN)) delay(DELAY); // Press Enter to start the game
-	
+
 	cleardevice();
 	setbkcolor(7);
 	settings();
-	start();
-	
+	start_offline();
+
 	getch();
     closegraph();
 	return 0;

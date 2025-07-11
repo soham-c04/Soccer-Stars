@@ -1,0 +1,40 @@
+# Project: Soccer Stars
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Extensions/Constants.o Extensions/offline.o Extensions/Soccer_Stars.o Extensions/Online/online.o Extensions/Online/client.o
+LINKOBJ  = Extensions/Constants.o Extensions/offline.o Extensions/Soccer_Stars.o Extensions/Online/online.o Extensions/Online/client.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -L"C:/Users/SOHAM/Desktop/Projects/Game_Dev/Graphics_Header_File_Setup" -static-libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 -lws2_32 -m32
+INCS     = 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/Users/SOHAM/Desktop/Projects/Game_Dev/Graphics_Header_File_Setup"
+BIN      = "Soccer Stars.exe"
+CXXFLAGS = $(CXXINCS) -std=gnu++11 -m32 -Wall -Wextra
+CFLAGS   = $(INCS) -std=gnu++11 -m32 -Wall -Wextra
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Extensions/Constants.o: Extensions/Constants.cpp
+	$(CPP) -c Extensions/Constants.cpp -o Extensions/Constants.o $(CXXFLAGS)
+
+Extensions/offline.o: Extensions/offline.cpp
+	$(CPP) -c Extensions/offline.cpp -o Extensions/offline.o $(CXXFLAGS)
+
+Extensions/Soccer_Stars.o: Extensions/Soccer_Stars.cpp
+	$(CPP) -c Extensions/Soccer_Stars.cpp -o Extensions/Soccer_Stars.o $(CXXFLAGS)
+
+Extensions/Online/online.o: Extensions/Online/online.cpp
+	$(CPP) -c Extensions/Online/online.cpp -o Extensions/Online/online.o $(CXXFLAGS)
+
+Extensions/Online/client.o: Extensions/Online/client.cpp
+	$(CPP) -c Extensions/Online/client.cpp -o Extensions/Online/client.o $(CXXFLAGS)
