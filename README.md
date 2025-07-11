@@ -52,13 +52,13 @@ Choose the colors of Strikers.
 - **Settings** - open the settings tab to change colors in between the game.
 - **Quit** - goes back to the Main Menu page.
 
-<img width="300" src="https://github.com/user-attachments/assets/43163145-773f-483b-b93a-fce92ec0ad14">
-<img width="300" src="https://github.com/user-attachments/assets/57b2958d-d773-4f16-9b15-d9a53fc8d87f">
-<img width="300" src="https://github.com/user-attachments/assets/f4305ab6-dac9-4287-a159-20924c014443"><br><br><br>
+<img width="250" src="https://github.com/user-attachments/assets/43163145-773f-483b-b93a-fce92ec0ad14">
+<img width="250" src="https://github.com/user-attachments/assets/57b2958d-d773-4f16-9b15-d9a53fc8d87f">
+<img width="250" src="https://github.com/user-attachments/assets/f4305ab6-dac9-4287-a159-20924c014443"><br><br><br>
 
 ## Gameplay
-<img src="https://github.com/user-attachments/assets/e7c67b67-8da0-4171-8169-312b9df3bf80" width="450">
-<img src="https://github.com/user-attachments/assets/3f9cc602-6fe9-4166-9638-1659caa1a08c" width="450">
+<img src="https://github.com/user-attachments/assets/e7c67b67-8da0-4171-8169-312b9df3bf80" width="400">
+<img src="https://github.com/user-attachments/assets/3f9cc602-6fe9-4166-9638-1659caa1a08c" width="400">
 
 <table>
   <tr>
