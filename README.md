@@ -21,7 +21,7 @@ See [this](https://github.com/soham-c04/SAHAS-Arcade/tree/main/How%20to%20Compil
 
 **Note:-** Make sure to have the resources folder in the same directory as "Soccer Stars.exe".
 
-### Online:-
+**Online:-**
 1. Start server.exe and enter port_no for server.
 2. Set the Gamemode to **Online**.
 3. Enter ip of server in which server.exe was started, then enter the port no.
